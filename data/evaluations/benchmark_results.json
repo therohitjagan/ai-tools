@@ -1,0 +1,1095 @@
+{
+  "summary": {
+    "total_queries": 105,
+    "correct_executions": 95,
+    "execution_accuracy_pct": 90.48,
+    "syntax_validity_pct": 100.0,
+    "guardrail_pass_rate_pct": 100.0,
+    "average_latency_ms": 0.7,
+    "total_duration_seconds": 0.83
+  },
+  "complexity_breakdown": {
+    "simple": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 100.0,
+      "syntax_validity": 100.0
+    },
+    "join": {
+      "total": 25,
+      "correct": 23,
+      "accuracy": 92.0,
+      "syntax_validity": 100.0
+    },
+    "aggregation": {
+      "total": 20,
+      "correct": 19,
+      "accuracy": 95.0,
+      "syntax_validity": 100.0
+    },
+    "subquery": {
+      "total": 25,
+      "correct": 22,
+      "accuracy": 88.0,
+      "syntax_validity": 100.0
+    },
+    "window": {
+      "total": 20,
+      "correct": 16,
+      "accuracy": 80.0,
+      "syntax_validity": 100.0
+    }
+  },
+  "query_results": [
+    {
+      "id": "BM-001",
+      "question": "List all active customers from the United States.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.47,
+      "predicted_rows": 7,
+      "gold_rows": 7,
+      "error": null
+    },
+    {
+      "id": "BM-002",
+      "question": "Find products in the Software category with stock quantity greater than 5000.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.53,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-003",
+      "question": "Show all orders that are currently in Pending status.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.66,
+      "predicted_rows": 73,
+      "gold_rows": 73,
+      "error": null
+    },
+    {
+      "id": "BM-004",
+      "question": "List all suppliers located in Germany with rating above 4.5.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.34,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-005",
+      "question": "Find support tickets marked with Urgent priority.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.39,
+      "predicted_rows": 41,
+      "gold_rows": 41,
+      "error": null
+    },
+    {
+      "id": "BM-006",
+      "question": "Retrieve all 5-star product reviews.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.48,
+      "predicted_rows": 94,
+      "gold_rows": 94,
+      "error": null
+    },
+    {
+      "id": "BM-007",
+      "question": "List Enterprise customers who have churned.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.35,
+      "predicted_rows": 7,
+      "gold_rows": 7,
+      "error": null
+    },
+    {
+      "id": "BM-008",
+      "question": "Find order items with quantity greater than or equal to 3 and discount greater than 0.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.51,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-009",
+      "question": "List products in the Furniture category with unit cost under 150 dollars.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.33,
+      "predicted_rows": 2,
+      "gold_rows": 2,
+      "error": null
+    },
+    {
+      "id": "BM-010",
+      "question": "Show all orders paid with Wire Transfer having shipping cost less than 15 dollars.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.4,
+      "predicted_rows": 39,
+      "gold_rows": 39,
+      "error": null
+    },
+    {
+      "id": "BM-011",
+      "question": "Find resolved support tickets with resolution time under 5 hours.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.73,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-012",
+      "question": "List suppliers with reliability score of at least 0.95.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.46,
+      "predicted_rows": 3,
+      "gold_rows": 3,
+      "error": null
+    },
+    {
+      "id": "BM-013",
+      "question": "Find customer reviews with at least 20 helpful votes.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.44,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-014",
+      "question": "List all SMB customers located in Canada.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.44,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-015",
+      "question": "Show all orders that took more than 7 days to fulfill.",
+      "complexity": "simple",
+      "match": true,
+      "latency_ms": 0.54,
+      "predicted_rows": 72,
+      "gold_rows": 72,
+      "error": null
+    },
+    {
+      "id": "BM-016",
+      "question": "Show customer names and their order IDs for delivered orders.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.61,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-017",
+      "question": "List each product along with the name and country of its supplier.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.36,
+      "predicted_rows": 20,
+      "gold_rows": 20,
+      "error": null
+    },
+    {
+      "id": "BM-018",
+      "question": "Get order details including customer email, product name, and quantity ordered.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.63,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-019",
+      "question": "Show all customer support tickets along with the customer segment and country.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.79,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-020",
+      "question": "Find customer reviews on Electronics products including review rating and product name.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.55,
+      "predicted_rows": 84,
+      "gold_rows": 84,
+      "error": null
+    },
+    {
+      "id": "BM-021",
+      "question": "List orders placed by customers in Germany along with the customer name and order status.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.55,
+      "predicted_rows": 51,
+      "gold_rows": 51,
+      "error": null
+    },
+    {
+      "id": "BM-022",
+      "question": "Display products supplied by suppliers with a rating greater than 4.6.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.4,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-023",
+      "question": "Show customer full names who gave 1-star reviews along with the product reviewed.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.4,
+      "predicted_rows": 10,
+      "gold_rows": 10,
+      "error": null
+    },
+    {
+      "id": "BM-024",
+      "question": "Find delivered orders for Laptops including customer ID, order date, and quantity.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.84,
+      "predicted_rows": 19,
+      "gold_rows": 19,
+      "error": null
+    },
+    {
+      "id": "BM-025",
+      "question": "List customer names with unresolved support tickets and their order counts.",
+      "complexity": "join",
+      "match": false,
+      "latency_ms": 0.39,
+      "predicted_rows": 5,
+      "gold_rows": 88,
+      "error": "Row count mismatch: predicted 5 rows vs gold 88 rows."
+    },
+    {
+      "id": "BM-026",
+      "question": "Show products and their supplier names for items with unit price over 1000.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.41,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-027",
+      "question": "Retrieve all cancelled orders along with customer name and payment method.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.63,
+      "predicted_rows": 64,
+      "gold_rows": 64,
+      "error": null
+    },
+    {
+      "id": "BM-028",
+      "question": "Find all order items for products in the Office Supplies category.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.7,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-029",
+      "question": "List customers and tickets where the ticket satisfaction score was 1 or 2.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.53,
+      "predicted_rows": 27,
+      "gold_rows": 27,
+      "error": null
+    },
+    {
+      "id": "BM-030",
+      "question": "Display products reviewed by customers located in France.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.6,
+      "predicted_rows": 17,
+      "gold_rows": 17,
+      "error": null
+    },
+    {
+      "id": "BM-031",
+      "question": "Show delivered order items that received discounts over 10 percent.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.69,
+      "predicted_rows": 66,
+      "gold_rows": 66,
+      "error": null
+    },
+    {
+      "id": "BM-032",
+      "question": "List all suppliers providing products in the Audio subcategory.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.39,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-033",
+      "question": "Find customers who opened support tickets in the Billing category.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.56,
+      "predicted_rows": 31,
+      "gold_rows": 31,
+      "error": null
+    },
+    {
+      "id": "BM-034",
+      "question": "Display orders that include products manufactured in Japan.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 1.07,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-035",
+      "question": "Show customer reviews on products supplied by TechSupply Global.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.66,
+      "predicted_rows": 23,
+      "gold_rows": 23,
+      "error": null
+    },
+    {
+      "id": "BM-036",
+      "question": "List refunded orders along with the customer segment and shipping cost.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.59,
+      "predicted_rows": 70,
+      "gold_rows": 70,
+      "error": null
+    },
+    {
+      "id": "BM-037",
+      "question": "Find customer names who purchased ErgoGrip Wireless Mouse.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.84,
+      "predicted_rows": 50,
+      "gold_rows": 50,
+      "error": null
+    },
+    {
+      "id": "BM-038",
+      "question": "List support tickets opened by churned customers.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.43,
+      "predicted_rows": 24,
+      "gold_rows": 24,
+      "error": null
+    },
+    {
+      "id": "BM-039",
+      "question": "Show suppliers who supply products that have received at least one review.",
+      "complexity": "join",
+      "match": false,
+      "latency_ms": 0.36,
+      "predicted_rows": 5,
+      "gold_rows": 9,
+      "error": "Row count mismatch: predicted 5 rows vs gold 9 rows."
+    },
+    {
+      "id": "BM-040",
+      "question": "Find products ordered via Credit Card with quantity greater than 2.",
+      "complexity": "join",
+      "match": true,
+      "latency_ms": 0.67,
+      "predicted_rows": 16,
+      "gold_rows": 16,
+      "error": null
+    },
+    {
+      "id": "BM-041",
+      "question": "Count the number of customers in each country.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.44,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-042",
+      "question": "Calculate total revenue generated by each product category.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.93,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-043",
+      "question": "Find the average rating and review count for each product.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.66,
+      "predicted_rows": 20,
+      "gold_rows": 20,
+      "error": null
+    },
+    {
+      "id": "BM-044",
+      "question": "Calculate the total amount spent by each customer on delivered orders.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 1.17,
+      "predicted_rows": 92,
+      "gold_rows": 92,
+      "error": null
+    },
+    {
+      "id": "BM-045",
+      "question": "Find countries having more than 10 customers.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.38,
+      "predicted_rows": 6,
+      "gold_rows": 6,
+      "error": null
+    },
+    {
+      "id": "BM-046",
+      "question": "Compute average resolution time for support tickets grouped by priority.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.47,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-047",
+      "question": "Calculate total units sold and total orders for each product.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 1.25,
+      "predicted_rows": 20,
+      "gold_rows": 20,
+      "error": null
+    },
+    {
+      "id": "BM-048",
+      "question": "Find customer segments with total order count exceeding 50.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.59,
+      "predicted_rows": 3,
+      "gold_rows": 3,
+      "error": null
+    },
+    {
+      "id": "BM-049",
+      "question": "Calculate average fulfillment days by order status.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.57,
+      "predicted_rows": 5,
+      "gold_rows": 5,
+      "error": null
+    },
+    {
+      "id": "BM-050",
+      "question": "Find products with average review rating less than 3.5.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 1.09,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-051",
+      "question": "Count total orders by payment method.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.48,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-052",
+      "question": "Calculate total shipping revenue collected per customer segment.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.49,
+      "predicted_rows": 3,
+      "gold_rows": 3,
+      "error": null
+    },
+    {
+      "id": "BM-053",
+      "question": "Find suppliers who supply more than 2 products.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.35,
+      "predicted_rows": 2,
+      "gold_rows": 2,
+      "error": null
+    },
+    {
+      "id": "BM-054",
+      "question": "Count support tickets by category and satisfaction score.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.39,
+      "predicted_rows": 19,
+      "gold_rows": 19,
+      "error": null
+    },
+    {
+      "id": "BM-055",
+      "question": "Find subcategories with total stock quantity greater than 300.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.5,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-056",
+      "question": "Calculate the total discount amount given on delivered orders.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.73,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-057",
+      "question": "Find customer segments where churned customers represent more than 5 accounts.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.6,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-058",
+      "question": "Calculate the average unit cost and average unit price per product category.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.78,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-059",
+      "question": "Find products that have received more than 10 reviews.",
+      "complexity": "aggregation",
+      "match": false,
+      "latency_ms": 0.65,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": "Row ordering/value mismatch at row 1: predicted [6, 'ErgoGrip Wireless Mouse', 11] != gold [15, 'Acoustic ModuScreen Divider', 18]."
+    },
+    {
+      "id": "BM-060",
+      "question": "Count orders grouped by order year and month.",
+      "complexity": "aggregation",
+      "match": true,
+      "latency_ms": 0.82,
+      "predicted_rows": 17,
+      "gold_rows": 17,
+      "error": null
+    },
+    {
+      "id": "BM-061",
+      "question": "Find customers who have never placed an order.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.6,
+      "predicted_rows": 0,
+      "gold_rows": 0,
+      "error": null
+    },
+    {
+      "id": "BM-062",
+      "question": "List products whose unit price is strictly above the average product unit price.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.61,
+      "predicted_rows": 6,
+      "gold_rows": 6,
+      "error": null
+    },
+    {
+      "id": "BM-063",
+      "question": "Find customers who have spent more than the average customer spending on delivered orders.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 1.03,
+      "predicted_rows": 42,
+      "gold_rows": 42,
+      "error": null
+    },
+    {
+      "id": "BM-064",
+      "question": "List products whose price is greater than the average price in their respective category.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.45,
+      "predicted_rows": 7,
+      "gold_rows": 7,
+      "error": null
+    },
+    {
+      "id": "BM-065",
+      "question": "Find suppliers that do not supply any product in the Software category.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.47,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-066",
+      "question": "Find customers who have opened support tickets but never left a product review.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.51,
+      "predicted_rows": 5,
+      "gold_rows": 5,
+      "error": null
+    },
+    {
+      "id": "BM-067",
+      "question": "List orders whose shipping cost is higher than the average shipping cost of all orders.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.7,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-068",
+      "question": "Find products that have never been ordered.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.6,
+      "predicted_rows": 0,
+      "gold_rows": 0,
+      "error": null
+    },
+    {
+      "id": "BM-069",
+      "question": "List customers whose total number of orders is greater than the average orders per customer.",
+      "complexity": "subquery",
+      "match": false,
+      "latency_ms": 1.01,
+      "predicted_rows": 51,
+      "gold_rows": 51,
+      "error": "Row ordering/value mismatch at row 1: predicted [26, 'Ava', 'Smith', 5] != gold [10, 'Robin', 'Williams', 8]."
+    },
+    {
+      "id": "BM-070",
+      "question": "Find products that have received a review rating lower than the overall average review rating.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.79,
+      "predicted_rows": 55,
+      "gold_rows": 55,
+      "error": null
+    },
+    {
+      "id": "BM-071",
+      "question": "Find customers who have placed at least one order with total items greater than 5.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 1.32,
+      "predicted_rows": 93,
+      "gold_rows": 93,
+      "error": null
+    },
+    {
+      "id": "BM-072",
+      "question": "List suppliers whose average product cost is greater than 100 dollars.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.61,
+      "predicted_rows": 5,
+      "gold_rows": 5,
+      "error": null
+    },
+    {
+      "id": "BM-073",
+      "question": "Find customers with support tickets whose resolution time exceeded the 75th percentile average of 24 hours.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.55,
+      "predicted_rows": 27,
+      "gold_rows": 27,
+      "error": null
+    },
+    {
+      "id": "BM-074",
+      "question": "List products whose profit margin (unit price minus unit cost) is greater than the average profit margin.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.49,
+      "predicted_rows": 5,
+      "gold_rows": 5,
+      "error": null
+    },
+    {
+      "id": "BM-075",
+      "question": "Find customers who have placed delivered orders in both 2025 and 2026.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.91,
+      "predicted_rows": 41,
+      "gold_rows": 41,
+      "error": null
+    },
+    {
+      "id": "BM-076",
+      "question": "List orders that contain the single most expensive product in inventory.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.66,
+      "predicted_rows": 59,
+      "gold_rows": 59,
+      "error": null
+    },
+    {
+      "id": "BM-077",
+      "question": "Find suppliers that provide products belonging to more than one category.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.37,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-078",
+      "question": "Find customers whose first order was cancelled.",
+      "complexity": "subquery",
+      "match": false,
+      "latency_ms": 1.05,
+      "predicted_rows": 11,
+      "gold_rows": 17,
+      "error": "Row count mismatch: predicted 11 rows vs gold 17 rows."
+    },
+    {
+      "id": "BM-079",
+      "question": "Find products that have received more reviews than the average review count across products.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.43,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-080",
+      "question": "Find active customers who have spent more than 5000 dollars in total.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.88,
+      "predicted_rows": 9,
+      "gold_rows": 9,
+      "error": null
+    },
+    {
+      "id": "BM-081",
+      "question": "List products that have never received any review with rating 1 or 2.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.62,
+      "predicted_rows": 3,
+      "gold_rows": 3,
+      "error": null
+    },
+    {
+      "id": "BM-082",
+      "question": "Find customers whose average order value on delivered orders exceeds 1000 dollars.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 1.06,
+      "predicted_rows": 49,
+      "gold_rows": 49,
+      "error": null
+    },
+    {
+      "id": "BM-083",
+      "question": "Find suppliers that have a reliability score higher than the average supplier reliability score.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.37,
+      "predicted_rows": 5,
+      "gold_rows": 5,
+      "error": null
+    },
+    {
+      "id": "BM-084",
+      "question": "List customers with support tickets where satisfaction was below their segment average satisfaction.",
+      "complexity": "subquery",
+      "match": false,
+      "latency_ms": 0.82,
+      "predicted_rows": 5,
+      "gold_rows": 27,
+      "error": "Row count mismatch: predicted 5 rows vs gold 27 rows."
+    },
+    {
+      "id": "BM-085",
+      "question": "Find the customer who has the highest total number of orders.",
+      "complexity": "subquery",
+      "match": true,
+      "latency_ms": 0.79,
+      "predicted_rows": 1,
+      "gold_rows": 1,
+      "error": null
+    },
+    {
+      "id": "BM-086",
+      "question": "Rank customers by total spending on delivered orders using DENSE_RANK.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.66,
+      "predicted_rows": 92,
+      "gold_rows": 92,
+      "error": null
+    },
+    {
+      "id": "BM-087",
+      "question": "Rank products by unit price within each category using ROW_NUMBER.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.6,
+      "predicted_rows": 20,
+      "gold_rows": 20,
+      "error": null
+    },
+    {
+      "id": "BM-088",
+      "question": "Calculate cumulative running revenue across delivered orders ordered by date.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.35,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-089",
+      "question": "Find the chronological order sequence number for each customer using ROW_NUMBER.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.6,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-090",
+      "question": "Rank suppliers by their rating within each country using RANK.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.54,
+      "predicted_rows": 10,
+      "gold_rows": 10,
+      "error": null
+    },
+    {
+      "id": "BM-091",
+      "question": "Calculate each product category's percentage of total delivered revenue.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.05,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-092",
+      "question": "Find the top 2 highest unit price products per category using a CTE and DENSE_RANK.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.67,
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "error": null
+    },
+    {
+      "id": "BM-093",
+      "question": "Compute running total of products in stock ordered by product ID.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.42,
+      "predicted_rows": 20,
+      "gold_rows": 20,
+      "error": null
+    },
+    {
+      "id": "BM-094",
+      "question": "Rank support tickets chronologically for each customer.",
+      "complexity": "window",
+      "match": false,
+      "latency_ms": 1.09,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": "Row ordering/value mismatch at row 2: predicted [116, 3, 'Product Inquiry', '2026-07-01', 1] != gold [40, 3, 'Billing', '2026-03-13', 1]."
+    },
+    {
+      "id": "BM-095",
+      "question": "Rank customers by total spend within each segment, selecting the top 3 per segment.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.5,
+      "predicted_rows": 9,
+      "gold_rows": 9,
+      "error": null
+    },
+    {
+      "id": "BM-096",
+      "question": "Calculate previous order date for each customer using LAG.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.83,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-097",
+      "question": "Rank product reviews by helpful votes within each star rating tier.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.16,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-098",
+      "question": "Compute running total of shipping costs collected over orders ordered by order date.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.28,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-099",
+      "question": "Find customer signups partitioned by country and ordered chronologically with ROW_NUMBER.",
+      "complexity": "window",
+      "match": false,
+      "latency_ms": 0.93,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": "Row ordering/value mismatch at row 1: predicted [30, 'Australia', '2026-05-09', 1] != gold [76, 'Australia', '2025-01-01', 1]."
+    },
+    {
+      "id": "BM-100",
+      "question": "Calculate the lead order date for each customer's orders using LEAD.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.99,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-101",
+      "question": "Rank product categories by total units sold using RANK.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 1.7,
+      "predicted_rows": 4,
+      "gold_rows": 4,
+      "error": null
+    },
+    {
+      "id": "BM-102",
+      "question": "Calculate difference in revenue between current order and previous order using LAG.",
+      "complexity": "window",
+      "match": false,
+      "latency_ms": 1.19,
+      "predicted_rows": 63,
+      "gold_rows": 100,
+      "error": "Row count mismatch: predicted 63 rows vs gold 100 rows."
+    },
+    {
+      "id": "BM-103",
+      "question": "Rank customers by ticket resolution satisfaction within each segment.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.85,
+      "predicted_rows": 46,
+      "gold_rows": 46,
+      "error": null
+    },
+    {
+      "id": "BM-104",
+      "question": "Calculate cumulative count of reviews over time ordered by review date.",
+      "complexity": "window",
+      "match": true,
+      "latency_ms": 0.72,
+      "predicted_rows": 100,
+      "gold_rows": 100,
+      "error": null
+    },
+    {
+      "id": "BM-105",
+      "question": "Compute running average product price within each category ordered by unit price.",
+      "complexity": "window",
+      "match": false,
+      "latency_ms": 0.42,
+      "predicted_rows": 5,
+      "gold_rows": 20,
+      "error": "Row count mismatch: predicted 5 rows vs gold 20 rows."
+    }
+  ]
+}
